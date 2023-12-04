@@ -1,0 +1,30 @@
+# Executable
+capture
+
+# [Whitelist] main sources
+!cmd/capture
+
+# Test pcap files
+*.pcap
+
+# mod/sum files needed for builder images
+build/docker/alpine/go.mod
+build/docker/alpine/go.sum
+build/docker/debian/go.mod
+build/docker/debian/go.sum
+
+# [Whitelist] toplevel mod/sum
+!go.mod
+!go.sum
+
+# Current configuration (used for testing)
+capturerc.json
+
+# [Whitelist] Example configuration
+!configs/capturerc.json
+
+# log output for examination
+output
+
+# Cache directory used when cross compiling
+cache
