@@ -31,6 +31,11 @@ To do:
 
 ## Dependencies
 
+GoLang Version
+```
+go1.19
+```
+
 The following are only needed if you want to cross compile. They do not
 show all available architectures, only aarch64.
 
@@ -86,6 +91,25 @@ make cross PLATFORM=alpine ARCHITECTURE=arm64/v8
 make cross PLATFORM=alpine ARCHITECTURE=ppc64le
 make cross PLATFORM=alpine ARCHITECTURE=s390x
 ```
+
+## Run
+
+```
+./capture
+```
+
+Available Commands:
+- completion (Generate the autocompletion script for the specified shell)
+- conf (Shows effective configuration)
+- help (Help about any command)
+- info (Shows release info and exits)
+- open (Opens a packet source to sniff from)
+- Flags:
+    - -h, --help
+
+
+
+
 
 # Links
 
